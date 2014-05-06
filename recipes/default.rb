@@ -45,7 +45,7 @@ end
 
 bash "delete default nginx site" do
   user "root"
-  code "rm /etc/nginx/sites-enabled/default"
+  code "rm -f /etc/nginx/sites-enabled/default"
 end
 
 execute "restart-nginx" do
